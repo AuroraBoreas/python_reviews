@@ -1,3 +1,13 @@
+"""
+one difference that arises when using the context manager as a decorator
+is that the value return by __enter__() is not available inside the function be decorated, 
+unlike the case when `with` and `as` are used.
+
+arguments passed to the decorated fucntion are available in the usual way.
+
+"""
+
+
 import contextlib, sys, os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 from pkg.breaker import addBreaker
