@@ -16,6 +16,7 @@ def pathlib_parts():
     print('pathlib: {}, type: {}'.format(p1, type(p1)))
     # ! pathlib returns str obj
     print('os.path: {}, type: {}'.format(p2, type(p2)))
+    assert str(p1) == p2    # assertionError. why? path separators differs
     return
 
 @addBreaker
