@@ -71,6 +71,64 @@ def ospath_expanduser_vs_expandvars():
         lookup = '~' + user
         print('{!r:15} : {!r}'.format(lookup, os.path.expanduser(lookup)))
 
+@addBreaker
+def ospath_normpath_vs_abspath():
+    PATHS = [
+        'one//two//three',
+        'one/./two/./three',
+        'one/../alt/two/three',
+    ]
+    
+    print('os.path.normpath():')
+    # ! clear embeded variables or extra separators
+    for path in PATHS:
+        print('{!r:>22} : {!r}'.format(path, os.path.normpath(path)))
+    print('\nos.path.abspath():')
+    # ! converts relative path to an absolute filename
+    for path in PATHS:
+        print('{!r:>22} : {!r}'.format(path, os.path.abspath(path)))
+    return
+
+@addBreaker
+def ospath_properties():
+    import time
+    print('File         :', __file__)
+    print('Access time  :', time.ctime(os.path.getatime(__file__)))
+    print('Modified time:', time.ctime(os.path.getmtime(__file__)))
+    print('Change time  :', time.ctime(os.path.getctime(__file__)))
+    print('Size         :', os.path.getsize(__file__))
+    return
+
+@addBreaker
+def ospath_tests():
+    FILENAMES = [
+        os.path.dirname(__file__),
+        '/',
+        './broken_link',
+    ]
+    for file in FILENAMES:
+        print('File             : {!r}'.format(file))
+        print('Absolute         :', os.path.isabs(file))
+        print('Is File?         :', os.path.isfile(file))
+        print('Is Dir?          :', os.path.isdir(file))
+        print('Is Link?         :', os.path.islink(file))
+        # ! ismount shorts for hard-driver
+        print('Mountpoint?      :', os.path.ismount(file))
+        print('Exists?          :', os.path.exists(file))
+        # ! lexists shorts for link-exists
+        print('Link Exists?     :', os.path.lexists(file))
+        print()
+    return
+
+
+
+
+
+
+
+
+
+
 if __name__ == "__main__":
     # ospath components
     ospath_components()
@@ -82,3 +140,9 @@ if __name__ == "__main__":
     ospath_commonprefix_vs_commonpath()
     # expanduser() vs expandvars()
     ospath_expanduser_vs_expandvars()
+    # normpath() vs abspath()
+    ospath_normpath_vs_abspath()
+    # properties
+    ospath_properties()
+    # tests
+    ospath_tests()
