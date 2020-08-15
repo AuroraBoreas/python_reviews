@@ -17,7 +17,7 @@ def decimal_special_values():
     print('-Infinity + 1:', decimal.Decimal('-Infinity') + 1)
     # print comparing NaN
     print(decimal.Decimal('NaN') == decimal.Decimal('Infinity'))
-    print(decimal.Decimal('NaN') != decimal.Decimal('1'))
+    print(decimal.Decimal('NaN') != decimal.Decimal('Infinity'))
     return
 
 if __name__ == "__main__":

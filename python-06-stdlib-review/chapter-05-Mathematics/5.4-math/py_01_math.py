@@ -1,5 +1,8 @@
 """
 ! what?
+The math module implements many of the specialized IEEE functions that would normally
+be found in the native-platform C libraries for `complex mathematical operations` using
+floating-point values, including `logarithms` and `trigonometric` operations.
 
 ! why?
 
