@@ -16,4 +16,11 @@ mathematics `deframs`
 |-- math
 |-- statistics
 
+decimal
+|-- decimal
+|-- formatting
+|-- arithmetic
+|-- special values
+|-- context
+
 """

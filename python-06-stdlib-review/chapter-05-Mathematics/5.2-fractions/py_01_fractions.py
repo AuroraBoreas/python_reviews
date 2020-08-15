@@ -1,6 +1,6 @@
 """
 ! what?
-As a general-purpose programming language, Python is frequently used to solve mathematical problems.
+rational numbers
 
 ! why?
 It includes built-in types for managing integer and floating-point numbers,
