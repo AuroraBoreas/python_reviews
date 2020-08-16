@@ -75,21 +75,11 @@ def math_exp():
     print(fmt.format(math.exp(x)))
     
 @addBreaker
-def math_randians():
-    print('{:^7} {:^7} {:^7}'.format('Degrees', 'Radians', 'Expected'))
-    print('{:-^7} {:-^7} {:-^7}'.format('', '', ''))
-    INPUTS = [
-        (0, 0),
-        (30, math.pi / 6),
-        (45, math.pi / 4),
-        (60, math.pi / 3),
-        (90, math.pi / 2),
-        (180, math.pi),
-        (270, 3 / 2.0 * math.pi),
-        (360, 2 * math.pi),
-    ]
-    for deg, expected in INPUTS:
-        print('{:7d} {:7.2f} {:7.2f}'.format(deg, math.radians(deg), expected))
+def math_expml():
+    x = 0.0000000000000000000000001
+    print(x)
+    print(math.exp(x) - 1)
+    print(math.expm1(x))
 
 if __name__ == "__main__":
     # power
@@ -110,5 +100,5 @@ if __name__ == "__main__":
     # ! just like other special-case functions,
     # ! it uses an algorithm that produces more accurate results than general-purpose equivalent math.pow(math.e, x)
     math_exp()
-    # math.randians()
-    math_randians()
+    #expml? wth is it? calc index .. oh well
+    math_expml()
