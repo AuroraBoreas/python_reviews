@@ -15,6 +15,8 @@ def ospath_normpath():
     
     return
 
+### P336 or P374
+
 if __name__ == "__main__":
     # normpath()
     ospath_normpath()

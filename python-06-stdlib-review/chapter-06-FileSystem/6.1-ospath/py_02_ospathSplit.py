@@ -121,14 +121,6 @@ def ospath_tests():
     return
 
 
-
-
-
-
-
-
-
-
 if __name__ == "__main__":
     # ospath components
     ospath_components()

@@ -8,6 +8,14 @@ shell utilitiess
 
 ahh, then i understand
 
+so, let see what shell operations do we have?
+mkdir
+move
+rmdir
+echo
+copy
+delete
+
 ! how?
 
 shutil
