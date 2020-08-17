@@ -9,12 +9,16 @@ shell utilitiess
 ahh, then i understand
 
 so, let see what shell operations do we have?
+```shell
 mkdir
-move
 rmdir
-echo
-copy
-delete
+move
+copy - copy2
+copymode - copystat
+rmtree
+copytree
+
+```
 
 ! how?
 
