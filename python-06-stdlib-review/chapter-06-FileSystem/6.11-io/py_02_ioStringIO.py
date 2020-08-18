@@ -24,8 +24,7 @@ def io_BytesIO():
     output.close()
 
     input = io.BytesIO(b'Initial value for read buffer')
-    print(input.read())
-    
+    print(input.read())    
     pass
 
 
