@@ -8,6 +8,9 @@ but anyway, i got the gist of sqlite3 last time from an indian guy's website.
 built-in database w/o fee.
 isn't it beautfiul af?
 
+sqlite3 is fast, rigorously tested, and flexiable, 
+making it suitable for prototyping and production deployment
+for some applications
 
 ! how?
 "CRUD"
