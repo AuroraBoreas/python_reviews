@@ -7,12 +7,18 @@ implements concurrency using system processes.
 asyncio uses a single-threaded, single-process approach in which parts of an application
 cooperate to switch tasks explicitly at optimal times.
 
-+------------------+----------------------------------+-----------------+
-| concepts         | explanation                      | originated from |
-+==================+==================================+=================+
-| threading        |
-| mutliprocessing  |
-| asyncio          |
++------------------+-----------------------------------------------------------+-----------------+
+| concepts         | explanation                                               | originated from |
++==================+===========================================================+=================+
+| threading        | implements concurrency thru application threads           | CPU threads     |
++------------------+-----------------------------------------------------------+-----------------+
+| mutliprocessing  | implements concurrency using system processes             | System processes|
++------------------+-----------------------------------------------------------+-----------------+
+| asyncio          | use a single-threaded, single-process approach            | see below       |
+|                  | in which parts of an application cooperate to switch      |                 |
+|                  | tasks explicitly at optimal times.                        |                 |
++------------------+-----------------------------------------------------------+-----------------+
+
 
 
 
