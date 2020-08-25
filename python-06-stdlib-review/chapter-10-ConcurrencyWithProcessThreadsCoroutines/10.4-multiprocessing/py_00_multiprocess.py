@@ -3,6 +3,21 @@
 the `multiprocessing` module includes an API for 
 dividing work between multiple processes based on the API for `threading`
 
++------------------+-----------------------------------------------------------+-----------------+
+| concepts         | explanation                                               | originated from |
++==================+===========================================================+=================+
+| threading        | implements concurrency thru application threads           | CPU threads     |
++------------------+-----------------------------------------------------------+-----------------+
+| mutliprocessing  | implements concurrency using system processes             | System processes|
++------------------+-----------------------------------------------------------+-----------------+
+| asyncio          | use a single-threaded, single-process approach            | see below       |
+|                  | in which parts of an application cooperate to switch      |                 |
+|                  | tasks explicitly at optimal times.                        |                 |
++------------------+-----------------------------------------------------------+-----------------+
+| concurrent.      | implements thread and process-based executors             |                 |
+| futures          | for managing resources pools for running concurrent tasks |                 |
++------------------+-----------------------------------------------------------+-----------------+
+
 ! why?
 in some cases, `multiprocessing` is a drop-in replacement,
 and can be used instead of `threading` to take advantage of multiple CPU cores

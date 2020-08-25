@@ -6,6 +6,21 @@ which allows a program to run multiple operations concurrently in the same proce
 NOTE: to be fair, the concept of threading is rather abstract.
 i remember i saw a vid about this in YT
 
++------------------+-----------------------------------------------------------+-----------------+
+| concepts         | explanation                                               | originated from |
++==================+===========================================================+=================+
+| threading        | implements concurrency thru application threads           | CPU threads     |
++------------------+-----------------------------------------------------------+-----------------+
+| mutliprocessing  | implements concurrency using system processes             | System processes|
++------------------+-----------------------------------------------------------+-----------------+
+| asyncio          | use a single-threaded, single-process approach            | see below       |
+|                  | in which parts of an application cooperate to switch      |                 |
+|                  | tasks explicitly at optimal times.                        |                 |
++------------------+-----------------------------------------------------------+-----------------+
+| concurrent.      | implements thread and process-based executors             |                 |
+| futures          | for managing resources pools for running concurrent tasks |                 |
++------------------+-----------------------------------------------------------+-----------------+
+
 ! why?
 
 ! how?

@@ -18,7 +18,9 @@ cooperate to switch tasks explicitly at optimal times.
 |                  | in which parts of an application cooperate to switch      |                 |
 |                  | tasks explicitly at optimal times.                        |                 |
 +------------------+-----------------------------------------------------------+-----------------+
-
+| concurrent.      | implements thread and process-based executors             |                 |
+| futures          | for managing resources pools for running concurrent tasks |                 |
++------------------+-----------------------------------------------------------+-----------------+
 
 
 
