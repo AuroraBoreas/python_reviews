@@ -10,6 +10,9 @@ since the API supports passing data back and forth through the standard input an
 such `os.system()`, `os.spawnv()`, the variations of popen() 
 in the `os` and `popen2` modules and `commands` module
 
+subprocess + CLI == win
+why not?
+
 ! how?
 
 subprocess
