@@ -17,6 +17,53 @@ def subprocess_repeater():
     sys.stderr.flush()
     pass
 
+@addBreaker
+def subprocess_interaction():
+    import io
+    print('One line at a time:')
+    proc = subprocess.Popen(
+        'python3 repeater.py',
+        shell=True,
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+    )
+    stdin = io.TextIOWrapper(
+        proc.stdin,
+        encoding='utf8',
+        line_buffer=True, # send data on newline
+    )
+    stdout = io.TextIOWrapper(
+        proc.stdout,
+        encoding='utf8',
+    )
+    for i in range(5):
+        line = '{}\n'.format(i)
+        stdin.write(line)
+        output = stdout.readline()
+        print(output.rstrip())
+    remainder = proc.communicate()[0].decode('utf8')
+    print(remainder)
+    print()
+    print('All output at once:')
+    proc = subprocess.Popen(
+        'python3 repeater.py',
+        shell=True,
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+    )
+    stdin = io.TextIOWrapper(
+        proc.stdin,
+        encoding='utf8',
+    )
+    for i in range(5):
+        line = '{}\n'.format(i)
+        stdin.write(line)
+    stdin.flush()
+    output = proc.communicate()[0].decode('utf8')
+    print(output)
+    pass
+
+
 if __name__ == "__main__":
     """
     All of the previous examples assume a limited amount of interaction.
@@ -31,3 +78,5 @@ if __name__ == "__main__":
     and writes to standard output illustrates this technique
     """
     subprocess_repeater()
+    ### uses the `stdin` and `stdout` file handles owned by the Popen instance in different ways.
+    subprocess_interaction()
