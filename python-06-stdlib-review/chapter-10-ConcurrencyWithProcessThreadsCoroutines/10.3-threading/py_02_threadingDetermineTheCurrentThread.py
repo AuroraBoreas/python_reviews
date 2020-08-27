@@ -16,9 +16,9 @@ def threading_names():
         time.sleep(.3)
         print(threading.current_thread().getName(), 'Exiting')
 
-    t   = threading.Thread(name='my_service', target=my_service)
-    w   = threading.Thread(name='worker', target=worker)
-    w2  = threading.Thread(target=worker) # use default name
+    t  = threading.Thread(name='my_service', target=my_service)
+    w  = threading.Thread(name='worker', target=worker)
+    w2 = threading.Thread(target=worker) # use default name
 
     w.start()
     w2.start()
