@@ -1,3 +1,19 @@
+"""
+
++--------+--------------------+------------------------------------------------------------------+
+| Lock   | Full Name          | Notation                                                         |
++========+====================+==================================================================+
+| Lock   | Normal `Lock`      | cant NOT be acquired more than ONCE, even by the same thread.    |
++--------+--------------------+------------------------------------------------------------------+
+| RLock  | "reacquire" `Lock` | in a situation where separate code from the same thread          |
+|        |                    | needs to "reacqure" the lock                                     |
++--------+--------------------+------------------------------------------------------------------+
+
+
+"""
+
+
+
 import sys, threading, time, logging
 sys.path.append('.')
 from pkg.breaker import addBreaker
