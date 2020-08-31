@@ -28,6 +28,7 @@ def asyncio_as_completed():
         but it is not necessary to wait for all of the background operations to complete before taking other action.
 
         ? here is my question: difference between `wait()`, `gather()`, `as_completed()`?
+        Table: asyncio.wait() vs asyncio.gather() vs asyncio.as_completed()
         +-----------------+------------------------+------------------+---------------------------+
         | diff            | wait()                 | gather()         | as_completed()            |
         +=================+========================+==================+===========================+
