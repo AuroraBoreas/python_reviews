@@ -1,7 +1,5 @@
 import asyncio, functools
 import logging
-import queue, heapq, bisect, array, enum, struct, collections
-import itertools, functools, operator, contextlib
 
 logging.basicConfig(
     level=logging.DEBUG,
