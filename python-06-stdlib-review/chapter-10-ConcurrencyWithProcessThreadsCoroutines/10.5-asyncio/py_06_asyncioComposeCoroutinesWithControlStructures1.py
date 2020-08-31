@@ -29,6 +29,11 @@ def asyncio_wait():
             for i in range(num_phases)
         ]
         logging.debug('waiting for phases to complete')
+        """
+        Internally, `wait()` uses a set to hold the Task instances it creates,
+        which means that the instances start, and finish, in an unpredictable order. 
+        The return value from `wait()` is a tuple containing two sets holding the finished and pending tasks.
+        """
         completed, pending = await asyncio.wait(phases)
         pendings = [p.result() for p in pending]
         results = [t.result() for t in completed]
