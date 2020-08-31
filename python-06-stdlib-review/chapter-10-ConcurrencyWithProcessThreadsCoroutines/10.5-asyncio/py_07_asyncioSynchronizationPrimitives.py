@@ -59,6 +59,11 @@ def asyncio_lock():
         """
         lock = asyncio.Lock()
         logging.debug('acquring the lock before starting coroutines')
+        """
+        a Lock can be invoked directly.
+        ! using `await` to acquire it and calling the `release()` method when done
+        just like `threading.Lock()` and `multiprocessing.Lock()`, context managers help a lot
+        """
         await lock.acquire()
         logging.debug('lock acquired: {}'.format(lock.locked()))
         # schedules a callback to unlock the lock
