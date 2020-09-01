@@ -96,6 +96,7 @@ def typeing_Functions() -> None:
         subject: '',
         body: Optional[List[str]] = None,
     ) -> bool:
+        ...
     
     # it is possible to declare the return type of a callable 
     # w/o specifying the call signature by substituting a literal ellipsis for the list of arguments in the type hint: Callable[..., ReturnType]
