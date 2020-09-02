@@ -49,5 +49,4 @@ concurrent.futures
 |-- context manager
 |-- process pools
 
-higher level than `threading` and `multiprocessing`
 """
