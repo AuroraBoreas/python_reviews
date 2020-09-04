@@ -8,7 +8,7 @@ sockets have two primary properties controlling the way they send data.
 |-- the `address family` controls the OSI network layer protocol used and 
 |-- the `socket type` controls the transport leyer protocol.
 
-Python supports three address families.
+Python supports theree address families.
 |-- AF_INET, is used for IPv4 Internettt addressing.
 |   IPv4 addresses are 4 bytes longing and are usually represented as a sequence of four numbers, one per octet, separated by dots(e.g., 10.1.1.5 and 127.0.0.1)
 |
