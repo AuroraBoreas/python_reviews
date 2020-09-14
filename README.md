@@ -1,4 +1,4 @@
 # python_reviews
-吾当三省吾身
+Python advanced techniques
 
 python source code when exploring and reviewing advanced contents
