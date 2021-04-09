@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1617681947 source:c:\users\5106001995\desktop\20210221_lang_review\c++\cpp_meta\meta.cpp
+	"meta.h"
+
+1617682152 c:\users\5106001995\desktop\20210221_lang_review\c++\cpp_meta\meta.h
+	<string>
+	<ctime>
+	<iomanip>
+	<sstream>
+	<iostream>
+
+1617681746 source:c:\users\5106001995\desktop\20210221_lang_review\c++\cpp_meta\main.cpp
+	<iostream>
+	<cctype>
+	<cstdlib>
+	"meta.h"
+
+1617598510 source:c:\users\5106001995\desktop\20210221_lang_review\c++\cpp_meta\date.cpp
+	"meta.h"
+

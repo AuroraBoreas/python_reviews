@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1614645409 source:c:\users\5106001995\desktop\20210221_lang_review\c++\c++14_features\main.cpp
+	<iostream>
+	<memory>
+	<string>
+

@@ -1,0 +1,26 @@
+header {
+    background: rgba(0, 0, 0, .7);
+    color: white;
+    padding: 10px;
+    font-size: x-large;
+
+}
+
+body {
+    background: rgb(245, 245, 182);
+    font-family: sans-serif;
+    margin: 10px 5%;
+}
+
+.partner {
+    display: -ms-flexbox;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 3 2 100px;
+}
+
+.partner-item {
+    background: "red";
+    flex: auto 2 100px;
+}
+

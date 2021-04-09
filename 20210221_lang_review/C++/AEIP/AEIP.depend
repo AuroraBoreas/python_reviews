@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1614574754 source:c:\users\5106001995\desktop\20210221_lang_review\c++\aeip\main.cpp
+	<iostream>
+	"time.h"
+	"date.h"
+
+1614573495 c:\users\5106001995\desktop\20210221_lang_review\c++\aeip\time.h
+	<iostream>
+	<string>
+
+1614573593 source:c:\users\5106001995\desktop\20210221_lang_review\c++\aeip\time.cpp
+	"time.h"
+	<ctime>
+	<iomanip>
+	<sstream>
+
+1614575402 c:\users\5106001995\desktop\20210221_lang_review\c++\aeip\date.h
+	<iostream>
+	<string>
+
+1614575442 source:c:\users\5106001995\desktop\20210221_lang_review\c++\aeip\date.cpp
+	"date.h"
+	<ctime>
+	<sstream>
+	<iomanip>
+
+1614576438 source:c:\users\5106001995\desktop\20210221_lang_review\c++\aeip\datetime.cpp
+	"datetime.h"
+
+1614576435 c:\users\5106001995\desktop\20210221_lang_review\c++\aeip\datetime.h
+	"date.h"
+	"time.h"
+
