@@ -2,8 +2,11 @@
 
 from library import Base
 
-assert hasattr(Base, 'foo'), f'foo() not found in {Base}'
-
 class Derived(Base):
     def bar(self):
-        return self.foo()
+        return 'bar'
+
+
+class A(Base):
+    def a(self):
+        return 'a'
