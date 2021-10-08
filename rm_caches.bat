@@ -1,4 +1,5 @@
 @REM Ref: https://stackoverflow.com/questions/25554254/batch-command-to-delete-all-subfolders-with-a-specific-name
+@REM @ZL, 20210903
 
 @echo off
 goto :main
@@ -13,6 +14,7 @@ goto :main
 	
 	@REM remove python caches
 	FOR /d /r . %%d IN (%pycache%) DO @IF EXIST "%%d" rd /s /q "%%d"
+	FOR /r . %%f in (*.db) do @if exist "%%f" del /s /q "%%f"
 	
 	@REM remove c++ caches
 	FOR /d /r . %%d IN (%cppcache1%) DO @IF EXIST "%%d" rd /s /q "%%d"
