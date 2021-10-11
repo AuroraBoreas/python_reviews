@@ -1,0 +1,19 @@
+#Python is a protocol orientated lang; every top-level function has a correspoding dunder method implemented; 
+
+from typing import Callable
+
+class Base:
+    def foo(self)->str:
+        return self.bar()
+
+old_bc = __build_class__
+
+def my_bc(func:Callable, name:str, base=object)->object:
+    if base:
+        if Base is base:
+            assert 'bar' in func.__code__.co_names, AttributeError(f'bar not found in {name}')
+            return old_bc(func, name, base)
+    return old_bc(func, name)
+
+import builtins
+builtins.__build_class__ = my_bc
