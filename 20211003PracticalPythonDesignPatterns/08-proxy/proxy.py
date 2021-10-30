@@ -26,9 +26,9 @@ class CalculatorProxy:
 
 if __name__ == '__main__':
     c = CalculatorProxy(RawCalculator())
-    beg = time.perf_counter()
+    beg = time.time()
     fib_seq = [c.fib(x) for x in range(0, 80)]
-    end = time.perf_counter()
+    end = time.time()
 
     print(
         'Calculating the list of {} Fibonacci numbers took {} seconds'.format(
@@ -36,4 +36,4 @@ if __name__ == '__main__':
             end - beg
         )
     )
-    print(fib_seq)
+
