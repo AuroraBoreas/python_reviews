@@ -1,0 +1,1 @@
+# see C++ example as python lacks overloading and virtual table
