@@ -1,0 +1,1 @@
+# refer C++ template method pattern as python has no "double dispath"->method overloading
