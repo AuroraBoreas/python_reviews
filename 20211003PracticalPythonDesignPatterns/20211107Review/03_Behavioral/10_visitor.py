@@ -1,23 +1,23 @@
 # visitor
 from __future__ import annotations
 from abc import ABCMeta, abstractmethod
-from typing import overloads
+from typing import overload
 
 class IGraphic(metaclass=ABCMeta):
     @abstractmethod
-    def visit(self, v: Visitor)->None:
+    def accept(self, v: Visitor)->None:
         pass
 
 class Shape(IGraphic):
-    def visit(self, v: Visitor) -> None:
+    def accept(self, v: Visitor) -> None:
         return v.visit(self)
 
 class Dot(IGraphic):
-    def visit(self, v: Visitor) -> None:
+    def accept(self, v: Visitor) -> None:
         return v.visit(self)
 
 class Visitor:
-    @overloads
+    @overload
     def visit(self, s:Shape)->None:
         print('visited shape')
     
