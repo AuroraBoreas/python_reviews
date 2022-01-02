@@ -1,0 +1,7 @@
+setup.py
+cy/__init__.py
+cy/core.py
+fuckcy.egg-info/PKG-INFO
+fuckcy.egg-info/SOURCES.txt
+fuckcy.egg-info/dependency_links.txt
+fuckcy.egg-info/top_level.txt
