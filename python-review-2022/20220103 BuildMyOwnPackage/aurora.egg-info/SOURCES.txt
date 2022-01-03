@@ -1,0 +1,7 @@
+setup.py
+aurora/__init__.py
+aurora/core.py
+aurora.egg-info/PKG-INFO
+aurora.egg-info/SOURCES.txt
+aurora.egg-info/dependency_links.txt
+aurora.egg-info/top_level.txt
