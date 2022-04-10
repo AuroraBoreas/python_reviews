@@ -1,0 +1,26 @@
+"#" 
+from __future__ import annotations
+from abc import ABC, abstractmethod
+from typing import overload
+
+
+class IGraphic(ABC):
+    @abstractmethod
+    def accept(self, v:Visitor)->None:
+        pass
+
+class Shape(IGraphic):
+    def accept(self, v: Visitor) -> None:
+        v.visit(self)
+
+class Dot(IGraphic):
+    def accept(self, v: Visitor) -> None:
+        v.visit(self)
+
+class Visitor:
+    @overload
+    def visit(self, s:IGraphic)->None:
+        print(f'{self.__class__} visited {s.__class__}')
+
+    def visit(self, d:IGraphic)->None:
+        print(f'{self.__class__} visited {d.__class__}')
