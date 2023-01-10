@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1673224812 source:c:\users\5106001995\desktop\git\c++_megareview\test\main.cpp
+	"main.h"
+
+1673225132 c:\users\5106001995\desktop\git\c++_megareview\test\main.h
+	<windows.h>
+	<cmath>
+
+1673225754 source:d:\pj_00_codelib\2019_pypj\20230109_testdll\main.cpp
+	"main.h"
+
+1673228509 d:\pj_00_codelib\2019_pypj\20230109_testdll\main.h
+	<windows.h>
+	<cmath>
+	<iostream>
+
